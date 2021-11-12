@@ -1,5 +1,4 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import withLinaria from 'next-linaria';
 import { PHASE_DEVELOPMENT_SERVER } from 'next/constants';
 import { NextConfig } from 'next/dist/next-server/server/config';
 import webpack from 'webpack';
@@ -16,10 +15,6 @@ const nextConf = (phase: string): NextConfig => {
   },
   images: {
    domains: [''],
-  },
-  linaria: {
-   cacheDirectory: '.next/cache/linaria',
-   sourceMap: process.env.NODE_ENV === 'production',
   },
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
@@ -53,7 +48,7 @@ const nextConf = (phase: string): NextConfig => {
   Object.assign(baseConf, {});
  }
 
- return withLinaria(baseConf);
+ return baseConf;
 };
 
 export default nextConf;

@@ -1,9 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ReactElement } from 'react';
 
-// Generate favicons here https://realfavicongenerator.net/
-// Great variable fonts database https://fonts.google.com/?vfonly=true
-export const siteName = 'ReactJS Template';
+export const siteName = 'Ferramentas de Lógica';
 
 class MyDocument extends Document {
  render(): ReactElement {

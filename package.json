@@ -1,23 +1,22 @@
 {
- "name": "reactjs-template",
- "version": "2.3.4",
+ "name": "ferramentas-logica",
+ "version": "1.0.0",
  "private": true,
- "description": "A boilerplate for Next.js",
+ "description": "Um conjunto de ferramentas para facilitar os assuntos abordados na cadeira de Lógica Matemática",
  "keywords": [
-  "boilerplate",
+  "logic",
   "next",
   "react",
-  "template",
-  "typescript"
+  "toolkit"
  ],
- "homepage": "https://reactjs-template.vercel.app",
+ "homepage": "https://ferramentas-logica.vercel.app",
  "bugs": {
-  "url": "https://github.com/hyoretsu/reactjs-template/issues",
+  "url": "https://github.com/hyoretsu/ferramentas-logica/issues",
   "email": "hyoretsu@gmail.com"
  },
  "repository": {
   "type": "git",
-  "url": "https://github.com/hyoretsu/reactjs-template.git"
+  "url": "https://github.com/hyoretsu/ferramentas-logica.git"
  },
  "license": "MIT",
  "author": {
@@ -25,13 +24,6 @@
   "email": "hyoretsu@gmail.com",
   "url": "https://www.linkedin.com/in/aranleite"
  },
- "contributors": [
-  {
-   "name": "",
-   "email": "",
-   "url": ""
-  }
- ],
  "scripts": {
   "build": "next build",
   "dev": "NODE_OPTIONS='--inspect' node server.js",
@@ -55,17 +47,14 @@
  },
  "dependencies": {
   "@babel/runtime": "^7.16.3",
-  "@linaria/core": "^3.0.0-beta.13",
-  "@linaria/react": "^3.0.0-beta.13",
   "axios": "^0.24.0",
-  "core-js": "^3.19.1",
   "next": "^12.0.3",
   "next-seo": "^4.28.1",
-  "polished": "^4.1.3",
   "react": "^17.0.2",
   "react-dom": "^17.0.2",
   "react-icons": "^4.3.1",
   "scheduler": "^0.20.2",
+  "styled-components": "^5.3.3",
   "use-context-selector": "^1.3.9",
   "yup": "^0.32.11"
  },
@@ -74,9 +63,6 @@
   "@babel/core": "^7.16.0",
   "@babel/plugin-transform-runtime": "^7.16.0",
   "@babel/preset-env": "^7.16.0",
-  "@linaria/babel-preset": "^3.0.0-beta.13",
-  "@linaria/shaker": "^3.0.0-beta.13",
-  "@linaria/webpack-loader": "^3.0.0-beta.13",
   "@next/eslint-plugin-next": "^12.0.3",
   "@svgr/webpack": "^5.5.0",
   "@types/enzyme": "^3.10.10",
@@ -84,6 +70,7 @@
   "@types/node": "^16.11.7",
   "@types/react": "^17.0.34",
   "@types/react-dom": "^17.0.11",
+  "@types/styled-components": "^5.1.15",
   "@types/webpack": "^5.28.0",
   "@types/yup": "^0.29.13",
   "@typescript-eslint/eslint-plugin": "^5.3.1",
@@ -92,6 +79,7 @@
   "axios-mock-adapter": "^1.20.0",
   "babel-jest": "^27.3.1",
   "babel-plugin-add-module-exports": "^1.0.4",
+  "babel-plugin-styled-components": "^1.13.3",
   "enzyme": "^3.11.0",
   "eslint": "^8.2.0",
   "eslint-config-airbnb": "^19.0.0",
@@ -108,7 +96,6 @@
   "jest": "^27.3.1",
   "jest-enzyme": "^7.1.2",
   "lint-staged": "^11.2.6",
-  "next-linaria": "^1.0.1-beta",
   "next-sitemap": "^1.6.203",
   "prettier": "^2.4.1",
   "ts-jest": "^27.0.7",

@@ -16,10 +16,8 @@ const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
  return (
   <>
    <DefaultSeo
-    additionalMetaTags={[{ property: 'og:locale:alternate', content: 'pt_BR' }]}
     defaultTitle={site_name}
     facebook={{ appId: String(process.env.NEXT_PUBLIC_FACEBOOK_APP_ID) }}
-    languageAlternates={[{ hrefLang: 'pt-BR', href: `${url}/pt` }]}
     openGraph={{
      images: [
       {
@@ -29,7 +27,7 @@ const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
        alt: site_name,
       },
      ],
-     // locale: 'en_US',
+     locale: 'pt_BR',
      site_name,
      type: 'website',
      url: url + pathname,
